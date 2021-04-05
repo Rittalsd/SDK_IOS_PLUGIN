@@ -1,0 +1,64 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RitaPaySDK
+import CommonCrypto
+import Foundation
+@_exported import RitaPaySDK
+import Swift
+import UIKit
+public struct PaymentResponse : Swift.Decodable {
+  public let responseCode: Swift.String
+  public let responseStatus: Swift.String
+  public let responseMessage: Swift.String
+  public let checkOutId: Swift.String?
+  public let paymentStatus: Swift.String?
+  public let pan: Swift.String?
+  public var balanceDecimal: Swift.Double? {
+    get
+  }
+  public let expiryDate: Swift.String?
+  public let referenceId: Swift.String?
+  public let requestDateTime: Swift.String?
+  public let currency: Swift.String?
+  public let customerName: Swift.String?
+  public let customerPhoneNumber: Swift.String?
+  public var transactionAmountDecimal: Swift.Double? {
+    get
+  }
+  public let transactionDateTime: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class RitaPayConfiguration {
+  public static let shared: RitaPaySDK.RitaPayConfiguration
+  public var appProtocol: Swift.String
+  public var appDomain: Swift.String
+  public var appPort: Swift.String
+  public var applicationName: Swift.String
+  public var orgnizationUserName: Swift.String
+  public var orgnizationPassword: Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class PaymentViewController : UIKit.UIViewController {
+  public var checkOutId: Swift.String? {
+    get
+    set
+  }
+  weak public var delegate: RitaPaySDK.PaymentViewDelegate?
+  @objc override dynamic public func viewDidLoad()
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+public struct PaymentInformationResponse : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol PaymentViewDelegate : AnyObject {
+  func didFinishPayment(_ payment: RitaPaySDK.PaymentResponse?)
+  func didFinishPayment(didAbortWithError error: Swift.Error)
+}
+@_hasMissingDesignatedInitializers public class ThemeManager {
+  public static let shared: RitaPaySDK.ThemeManager
+  public var themeColor: UIKit.UIColor
+  public var companyLogoImage: UIKit.UIImage?
+  @objc deinit
+}

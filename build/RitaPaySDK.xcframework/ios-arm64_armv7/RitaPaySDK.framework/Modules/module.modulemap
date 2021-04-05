@@ -1,0 +1,11 @@
+framework module RitaPaySDK {
+  umbrella header "RitaPaySDK.h"
+
+  export *
+  module * { export * }
+}
+
+module RitaPaySDK.Swift {
+    header "RitaPaySDK-Swift.h"
+    requires objc
+}
