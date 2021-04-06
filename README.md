@@ -4,10 +4,10 @@ RitaPaySDK is pure-swift API to process your payment in iOS applications through
 
 ## Features
 
-[x] Integrate to Rittal payment gateway with your credintials
-[x] Secure interface to process your payment
-[x] Get transaction result back in your iOS application
-[x] Add your company logo to the payment interface
+- [x] Integrate to Rittal payment gateway with your credintials
+- [x] Secure interface to process your payment
+- [x] Get transaction result back in your iOS application
+- [x] Add your company logo to the payment interface
 
 ## Requirements
 
