@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RitaPaySDK"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "RitaPaySDK is pure-swift API to process your payment in iOS applications through Rittal payment gateway."
 
   spec.homepage     = "https://github.com/Rittalsd/SDK_IOS_PLUGIN.git"
