@@ -113,7 +113,7 @@
 				180D187D2610F096001DCC1A /* Scenes */,
 				180D187C2610F090001DCC1A /* Models */,
 				180D187B2610F082001DCC1A /* Networking */,
-				180D18762610DAD0001DCC1A /* Configuration */,
+				180D18762610DAD0001DCC1A /* SDK Configuration */,
 				180D18742610DA7E001DCC1A /* Header Files */,
 			);
 			path = RitaPaySDK;
@@ -136,13 +136,13 @@
 			path = "Header Files";
 			sourceTree = "<group>";
 		};
-		180D18762610DAD0001DCC1A /* Configuration */ = {
+		180D18762610DAD0001DCC1A /* SDK Configuration */ = {
 			isa = PBXGroup;
 			children = (
 				180D18772610DAE6001DCC1A /* RitaPayConfiguration.swift */,
 				180D18C5261222EE001DCC1A /* ThemeManager.swift */,
 			);
-			path = Configuration;
+			path = "SDK Configuration";
 			sourceTree = "<group>";
 		};
 		180D187B2610F082001DCC1A /* Networking */ = {
