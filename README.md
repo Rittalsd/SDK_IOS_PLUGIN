@@ -20,6 +20,14 @@ RitaPaySDK is pure-swift API to process your payment in iOS applications through
 
 Add `RitaPaySDK.xcframework` from the build folder to `Frameworks, Libraries, and Embedded Content` section of your Target General settings tab.
 
+#### Cocoapods
+
+Add the following line to your pods file
+```
+pod 'RitaPaySDK'
+```
+and then run `pod install` from the terminal
+
 ## License
 
 MIT
